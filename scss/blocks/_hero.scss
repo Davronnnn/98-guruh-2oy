@@ -1,0 +1,42 @@
+.hero {
+	padding: 137px 85px;
+
+	background-image: url(./images/about.png);
+
+	&--subscribe {
+		background-image: url(./images/subscribe.png);
+	}
+
+	&__title {
+		font-family: 'Fraunces 9pt';
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 48px;
+
+		color: #fefcf7;
+	}
+
+	&__title--subscribe {
+		font-size: 72px;
+		line-height: 72px;
+	}
+	&__text {
+		margin-top: 24px;
+
+		width: 445px;
+
+		font-family: 'Barlow';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+
+		line-height: 26px;
+		/* or 162% */
+
+		color: #fefcf7;
+	}
+	&__text--subscribe {
+		opacity: 0.8;
+	}
+}

@@ -4,81 +4,120 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./main.css" />
+		<link rel="stylesheet" href="./css/main.min.css" />
+
 		<title>Document</title>
 	</head>
 	<body>
-		<div class="header-wrapper">
-			<!-- block -->
+		<input name="modal" id="check" type="radio" />
+		<input name="modal" id="check2" type="radio" />
+
+		<div class="modal">
+			<div class="modal__card">
+				<div class="modal__header">
+					<h4 class="modal__title">Order Summary</h4>
+				</div>
+				<div class="modal__body">
+					<p class="modal__description">
+						“I drink my coffee as Filter, with a Decaf type of bean.
+						250g ground ala Cafetiére, sent to me Every Week.”
+					</p>
+					<p class="modal__text">
+						Is this correct? You can proceed to checkout or go back
+						to plan selection if something is off. Subscription
+						discount codes can also be redeemed at the checkout.
+					</p>
+					<label for="check2">
+						<div class="modal__btn btn">Checkout</div>
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="container">
 			<header class="header container">
 				<img
 					class="header__logo"
-					width="60"
-					height="68"
-					src="./images/logo.png"
+					src="./images/logo.svg"
 					alt="NT logo"
 				/>
-				<div class="header__btns">
-					<img
-						class="header__search"
-						src="./images/search-icon.svg"
-						alt="search-icon"
-					/>
-					<button class="header__btn btn">Menu</button>
-				</div>
+				<nav class="header__nav">
+					<ul class="header__list">
+						<li class="header__item">Home</li>
+						<li class="header__item">About us</li>
+						<li class="header__item">Create your plan</li>
+					</ul>
+					<label for="check">
+						<div class="btn header__btn">Button</div>
+					</label>
+				</nav>
 			</header>
 
-			<section class="hero container">
-				<h1 class="hero__title">Night Trips</h1>
-				<h4 class="hero__subtitle">
-					WE GOT TRIPS FOR THE TRIPPSTER IN YOU
-				</h4>
-				<p class="hero__text">
-					Neque, eros commodo, nascetur ullamcorper vitae. Tincidunt
-					ut venenatis, volutpat lorem ut faucibus mauris, quisque.
-					Integer gravida sed quis congue. Vel risus, arcu a viverra
-					leo id pulvinar ultricies. Enim in in in pulvinar nulla
-					sollicitudin. Ullamcorper.
-				</p>
-
-				<div class="hero__bottom"></div>
-			</section>
-		</div>
-		<section class="option">
-			<div class="container">
-				<div class="card">
-					<h4 class="card__title">Capsule</h4>
-					<p class="card__text">
-						Compatible with Nespresso systems and similar brewers
+			<main>
+				<section class="hero container">
+					<h1 class="hero__title">Night Trips</h1>
+					<h4 class="hero__subtitle">
+						WE GOT TRIPS FOR THE TRIPPSTER IN YOU
+					</h4>
+					<p class="hero__text">
+						Neque, eros commodo, nascetur ullamcorper vitae.
+						Tincidunt ut venenatis, volutpat lorem ut faucibus
+						mauris, quisque. Integer gravida sed quis congue. Vel
+						risus, arcu a viverra leo id pulvinar ultricies. Enim in
+						in in pulvinar nulla sollicitudin. Ullamcorper.
 					</p>
-				</div>
 
-				<div class="card card--main">
-					<h4 class="card__title card__title--main">Capsule</h4>
-					<p class="card__text card__text--main">
-						Compatible with Nespresso systems and similar brewers
+					<div class="hero__bottom"></div>
+				</section>
+
+				<section class="choose">
+					<h3 class="choose__title">Why choose us?</h3>
+					<p class="choose__subtitle">
+						A large part of our role is choosing which particular
+						coffees will be featured in our range. This means
+						working closely with the best coffee growers to give you
+						a more impactful experience on every level.
 					</p>
-					<div class="card__body">
-						<p class="card__body__description"></p>
+
+					<div class="choose__cards">
+						<div class="choose_card card">
+							<img
+								class="card__img"
+								src="./images/card-icon.png"
+								alt="icon"
+							/>
+							<h5 class="card__title">Best quality</h5>
+							<p class="card__text">
+								Discover an endless variety of the world’s best
+								artisan coffee from each of our roasters.
+							</p>
+						</div>
+						<div class="choose_card card">
+							<img
+								class="card__img"
+								src="./images/card-icon.png"
+								alt="icon"
+							/>
+							<h5 class="card__title">Best quality</h5>
+							<p class="card__text">
+								Discover an endless variety of the world’s best
+								artisan coffee from each of our roasters.
+							</p>
+						</div>
+						<div class="choose_card card">
+							<img
+								class="card__img"
+								src="./images/card-icon.png"
+								alt="icon"
+							/>
+							<h5 class="card__title">Best quality</h5>
+							<p class="card__text">
+								Discover an endless variety of the world’s best
+								artisan coffee from each of our roasters.
+							</p>
+						</div>
 					</div>
-				</div>
-
-				<div class="card">
-					<h4 class="card__title">Capsule</h4>
-					<p class="card__text">
-						Compatible with Nespresso systems and similar brewers
-					</p>
-				</div>
-			</div>
-		</section>
-
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__item">
-					
-				</li>
-			</ul>
-		</nav>
-		<!--   -->
+				</section>
+			</main>
+		</div>
 	</body>
 </html>
