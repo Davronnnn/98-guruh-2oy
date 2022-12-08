@@ -6,11 +6,14 @@
 
 .container {
 	width: 1280px;
+	max-width: 100%;
+
 	margin: 0 auto;
 }
 
 .btn {
 	padding: 10px;
+
 	background-color: #0e8784;
 	border-radius: 10px;
 	color: #fefcf7;
@@ -33,6 +36,7 @@ ul {
 .card {
 	width: 350px;
 	padding: 72px 48px 48px;
+	
 	background: $main-color;
 	border-radius: 8px;
 	text-align: center;
@@ -60,5 +64,13 @@ ul {
 		text-align: center;
 
 		color: #fefcf7;
+	}
+}
+table {
+	border-collapse: separate;
+}
+@media only screen and (max-width: 1280px) {
+	.container {
+		width: 90%;
 	}
 }
