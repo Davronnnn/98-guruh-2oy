@@ -2,11 +2,11 @@
 	position: relative;
 	height: 577px;
 
+	background: rgb(44, 52, 62);
+	background-image: url('../../images/home-bg.png');
 	margin-top: 200px;
 	padding-top: 100px;
 
-	background: rgb(44, 52, 62);
-	background: url('../../images/about.png');
 	border-radius: 10px;
 
 	text-align: center;
@@ -49,5 +49,69 @@
 
 		display: flex;
 		gap: 30px;
+	}
+}
+@media only screen and (max-width: 970px) {
+	.choose {
+		&__cards {
+			flex-direction: column;
+		}
+
+		&__subtitle {
+			width: auto;
+		}
+
+		.card {
+			padding: 41px 48px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 90%;
+			text-align: left;
+
+			&__title {
+				font-family: 'Fraunces 9pt';
+				font-style: normal;
+				font-weight: 900;
+				font-size: 24px;
+				line-height: 32px;
+
+				margin-top: 0;
+				margin-bottom: 16px;
+				color: #fefcf7;
+			}
+			&__content {
+				width: 70%;
+			}
+			&__text {
+				text-align: left;
+
+				font-family: 'Barlow';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 15px;
+				line-height: 25px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.choose {
+		background: url('../../images/about.png');
+		padding-top: 64px;
+		height: 850px;
+		&__subtitle {
+			width: 90%;
+		}
+		.card {
+			flex-direction: column;
+			text-align: center;
+			gap: 50px;
+
+			&__text {
+				text-align: center;
+			}
+		}
 	}
 }

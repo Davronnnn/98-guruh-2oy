@@ -4,6 +4,34 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./favicon_package_v0.16/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./favicon_package_v0.16/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./favicon_package_v0.16/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./favicon_package_v0.16/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="./favicon_package_v0.16/safari-pinned-tab.svg"
+			color="#5bbad5"
+		/>
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
+
 		<link rel="stylesheet" href="./css/main.min.css" />
 
 		<title>Document</title>
@@ -34,6 +62,13 @@
 			</div>
 		</div>
 		<div class="container">
+			<picture>
+				<img
+					src=""
+					srcset="./images/about.png 1x, ./images/Bitmap.jpg 2x"
+					alt=""
+				/>
+			</picture>
 			<header class="header container">
 				<img
 					class="header__logo"
@@ -50,21 +85,49 @@
 						<div class="btn header__btn">Button</div>
 					</label>
 				</nav>
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
+				<input id="mobile" type="checkbox" />
+				<label for="mobile">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</label>
+				<div class="mobile-menu">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link" href=""> Home </a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link" href=""> About us </a>
+						</li>
+						<li class="mobile-menu__item">
+							<a class="mobile-menu__link" href=""
+								>Create your plan
+							</a>
+						</li>
+					</ul>
 				</div>
 			</header>
 
 			<main>
 				<section class="collection">
 					<div class="collection__card">
-						<img
-							class="collection__img"
-							src="./images/bag.png"
-							alt="bag"
-						/>
+						<picture>
+							<source
+								srcset="./images/card-icon.png"
+								media="(max-width:500px)"
+							/>
+							<source
+								srcset="./images/logo.svg"
+								media="(max-width:900px)"
+							/>
+							<img
+								class="collection__img"
+								src="./images/bag.png"
+								alt="bag"
+							/>
+						</picture>
 						<div class="collection__content">
 							<h4 class="collection__title">Gran Espresso</h4>
 							<p class="collection__text">
@@ -133,8 +196,20 @@
 					<div class="hero__bottom"></div>
 				</section> -->
 
-				<!-- <section class="choose">
+				<section class="choose">
 					<h3 class="choose__title">Why choose us?</h3>
+					<svg
+						width="24"
+						height="20"
+						viewBox="0 0 24 20"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M24 2.55705C23.117 2.94905 22.168 3.21305 21.172 3.33205C22.189 2.72305 22.97 1.75805 23.337 0.608047C22.386 1.17205 21.332 1.58205 20.21 1.80305C19.313 0.846047 18.032 0.248047 16.616 0.248047C13.437 0.248047 11.101 3.21405 11.819 6.29305C7.728 6.08805 4.1 4.12805 1.671 1.14905C0.381 3.36205 1.002 6.25705 3.194 7.72305C2.388 7.69705 1.628 7.47605 0.965 7.10705C0.911 9.38805 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10605C22.505 4.41105 23.34 3.54405 24 2.55705Z"
+							fill="#FEFCF7"
+						/>
+					</svg>
 					<p class="choose__subtitle">
 						A large part of our role is choosing which particular
 						coffees will be featured in our range. This means
@@ -149,11 +224,14 @@
 								src="./images/card-icon.png"
 								alt="icon"
 							/>
-							<h5 class="card__title">Best quality</h5>
-							<p class="card__text">
-								Discover an endless variety of the world’s best
-								artisan coffee from each of our roasters.
-							</p>
+							<div class="card__content">
+								<h5 class="card__title">Best quality</h5>
+								<p class="card__text">
+									Discover an endless variety of the world’s
+									best artisan coffee from each of our
+									roasters.
+								</p>
+							</div>
 						</div>
 						<div class="choose_card card">
 							<img
@@ -161,11 +239,14 @@
 								src="./images/card-icon.png"
 								alt="icon"
 							/>
-							<h5 class="card__title">Best quality</h5>
-							<p class="card__text">
-								Discover an endless variety of the world’s best
-								artisan coffee from each of our roasters.
-							</p>
+							<div class="card__content">
+								<h5 class="card__title">Best quality</h5>
+								<p class="card__text">
+									Discover an endless variety of the world’s
+									best artisan coffee from each of our
+									roasters.
+								</p>
+							</div>
 						</div>
 						<div class="choose_card card">
 							<img
@@ -173,14 +254,17 @@
 								src="./images/card-icon.png"
 								alt="icon"
 							/>
-							<h5 class="card__title">Best quality</h5>
-							<p class="card__text">
-								Discover an endless variety of the world’s best
-								artisan coffee from each of our roasters.
-							</p>
+							<div class="card__content">
+								<h5 class="card__title">Best quality</h5>
+								<p class="card__text">
+									Discover an endless variety of the world’s
+									best artisan coffee from each of our
+									roasters.
+								</p>
+							</div>
 						</div>
 					</div>
-				</section> -->
+				</section>
 			</main>
 		</div>
 	</body>
